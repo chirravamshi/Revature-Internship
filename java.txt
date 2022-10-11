@@ -1,0 +1,42 @@
+java 8
+static block 
+y string immutable 
+collections  stream diff
+abstract class and interfaces diff
+serialisation 
+y oops
+=========================================
+logger - log4j
+junit 
+=======================================
+query - join outer 
+======================================
+Devops , docker ,jenkins
+====================================
+spring security spring boot !! mvc 
+beans
+ioc container
+spring security 
+==================================
+HTML CSS
+html 5 nd older version diff 
+doc type in html 
+=========================================
+java script premises 
+Angular - version 
+
+
+what is JDK,JRE,JVM diffrenciate ?
+What is Class And objects?
+What do you mean by Constructor?
+What Is Static mentod and Variable?
+why we are defining as a Static?
+
+
+What is Main pillars of OOps?
+
+Write a Query for inner join?
+
+
+What is @Springboot Application?
+How to create Rest Api?

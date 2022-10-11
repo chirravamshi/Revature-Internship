@@ -1,0 +1,72 @@
+#composed by Rajesh Yamunachari
+
+Hotel Booking System:
+The system should allow the users to book the hotel rooms for few days which should include accomodation and food during the stay
+Users/Actors
+Admin Users
+Receptionist
+Consumers/customers of the application
+
+
+About Admin Users
+Admin users allow the Receptionist activations
+Admin users allow to Add Hotel rooms and the services offered by the Hotels
+
+
+About Hotels
+Hotel types -3 Star, 5 Star etc - few will be with bar facility but purchases need to be done by the customer Hotel Rooms Type - single room, double room, triple room and etc
+Hotel Rooms Type - Normal, Deluxe, AC rooms
+Hotel Rooms pricing will vary based on the above and number of days/weeks/months bookings done before Hotel Rooms offers like for many Breakfast is free
+Hotel Rooms Offers like for few - evening/late night drinks free
+Hotel Rooms offers prices varying during the festival season or during the off season or during the holiday season
+Hotel Rooms always attached with Restaurant meaning food/beverages/snacks available throughout - is the assumption
+
+
+About Receptionist
+Receptionist allow to display what are the rooms are available & services are being offered, meaning the hotel user will need to activate it, so that it display for the customer
+Receptionist will confirm the registration made by the customer
+Receptionist will collect 10% of the charges during the bookings made by the customer
+Receptionist will define what will be included in the normal, deluxe and AC rooms to the customer if possible with few photos as well
+Hotel user will confirm the customer when the booking customers visits/comes during the actual date Receptionist will charge 50% when the customers arrive the hotel
+Receptionist will charge the balance 40% along with other restaurant bills charged when the customers vacates the room Receptionist will allow the customers to book from1 day to 10 days max
+Receptionist will allow the customers to book from 1 person to many persons based on the type of room occupancy
+ Receptionist will need to provide what is included and what is not included, what are the applicable charges only for the accomodation for the days booked by the customer during the confirmation and during 10% of charges booked during booking made by customer
+Hotel user with restaurants may have veg, non-veg facility
+
+
+About Customers/Consumers
+Customers need to register with name, mobile, email along with address Customers are allowed to book the available hotels from1 day to 10 days max
+Customers are allowed to book the rooms available and number of persons based on the room type
+Customers are allowed to book the rooms starting 2 months before till 1 week before and if rooms are available even 1-2 days before
+Customers are charged with different prices with varying reasons like depends on number of days before booked, type of the room, number of persons occupying etc
+Customers may have an option to choose the beverages, breakfast, lunch, evening beverages, snacks, dinner, drinks facility if available
+Customers may have an option to pick up and drop facility from near by Air, Train, Bus Station and applicable charges need to be displayed ahead during confirmation
+
+
+Cancellation Options/rules
+If after booking is done 3 months before and cancellation is done before 1 month - refund the 10% and the system should allow others customers to book the facility meaning make the room booked by the customer available now
+If after booking is done 1 months before and cancellation is done before 7-15 days - refund the 5% and the system should allow others customers to book the facility meaning make the room booked by the customer available now
+If the booking is cancelled later meaning any time less than 7 days no refund
+Full amount refund if any customer cancels due to any emergency for the customer or for his family - need to verify this, irrespective of any time of cancellation
+
+
+Reports
+Admin Receptionist should able to view the number of bookings/occupants/cancellations/payments etc on any day/date of time Reception should able to view the category of payments like for each facility wise the customers usage and payments made on any date/time
+Customer should able to view their bookings/cancellation for the last 3 months
+Technical Design/Architecture need to be derived for the following - Before start of the Development Database Schema/Table Design
+Presentation Layer - meaning UI Screens - for all the requirements stated above - none should be modified in the backend
+Business/service Layer - based on the requirements create the functionality and have them in the middle layer
+Database Layer - to access the DB data Validations
+All front end validations need to be done
+
+All business validations need to be properly reflected to the users with proper messages to change the data if needed
+All database validations need to be properly reflected to the users with proper messages to change the data if needed Logs
+To be maintained like which user using which functionality App logs for each layer need to be differentiated
+Exclusions or Implicit Assumptions
+Payment gateway or payments are assumed that all goes well without invoking
+Implicit - Testing
+For all the development implicit usage of Unit testing code should be done
+Devops - Tools should be used
+Github, Maven, Jenkins must be used to build and deploy
+Notifications (optional)
+Sent through Emails and SMS

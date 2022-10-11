@@ -1,0 +1,107 @@
+#Composed by Rajesh Yamunachari
+Patient Appointment Scheduling System (PASS)– Project 3 Requirements
+
+Patient Appointment Scheduling System:
+The Patient Appointment Scheduling System should allow patients to schedule the appointment with the available doctors 8, 4 doctors are general and other 4 doctors are specialist and after consultation is complete  need to have the prescription and recommendations to specialist if needed
+
+About Actors/users in the system
+
+Receptionist - Will confirm the appointment with the patient and allow to meet the doctor and collect the doctor fees
+Doctor - will consult with the patient in the scheduled time, provide prescriptions, recommendations to meet specialist, fees to be given to receptionist
+Patient - will schedule the appointment with doctors including speciality if needed
+Admin - user will create the doctors, doc type, timing, pricing etc
+
+About Doctors
+3 general doctors available in all week days including saturdays from morning 7-12 Pm and evening 5-10 PM
+1 general doctor available during the weekends only 2 days from 9-6
+2 specialist will be available all days from 10 AM to 2 PM
+1 specialist will be available for 3 days like Monday, Wednesday and Friday from 10 to 2 PM
+1 specialist will be available for 5 days in the evening from 5-9 PM
+General doctors fees will be same/fixed
+Specialist doctors fees will be differing for each patient and may not be the same
+Each general doctor will be spending 15-20 mins of time for each patient, 20 Mins max
+Each specialist doctor will be spending 30-45 mins of time for each patient, 45 mins max
+All the specialist will need to be displayed while the patient is booking an appointment
+All 4 specialist will be different category
+Doctors may take off very rarely like 1 day, will be informed to receptionist prior to 10 days, that time should not allow to schedule, receptionist should able to deactivate that doctor for that day saying doctor unavailable
+
+
+About Receptionist
+Available throughout the day from 6 AM till 11 PM
+Confirm that patient arrived using the confirmation button in the appointment screen
+Collect the doctor fees and provide the receipt to the patients visited daily
+Will help the patient if needed to schedule an appointment for any specialist on the same day if the appointment is available with the specialist doctor
+consolidate the number of patients visited each doctor in a day
+Consolidate the fees collected on each day
+
+About Patient
+Register first with name, phone number, email, address, user login, password as a first step
+Can include up to 5-8 Family members in his list to book the appointment for the doctors, but need to provide the relationship
+Need to maintain the family list
+when booking the appointment/schedule need to be clear whether for whom the schedule is done for him/her or for family members
+when booking need to be clear the schedule is for general doctor or for any specialist doctor
+Fees will need to be displayed if booking for general doctor and incase of specialist doctor Fees will not get displayed
+Patient should be required to be present in the hospital prior to 15 mins and confirm to receptionist, receptionist will wait for 10 mins, if receptionist confirms that patient not turned up in 10 mins,  receptionist can cancel after 10 mins
+
+Booking/Scheduling Rules
+Registered Patient users are allowed to book the appointment for general or specialist doctor
+Scheduling can be done prior to 10 days to till day meaning if the doctor appointment is available in the evening allow to book
+Patients not allowed to book the doctor appointment same day/same time of consultation
+Receptionist allowed to book the doctor appointment same day/same time if the doctor is available and patient is requesting - applicable to both general/specialist
+Booking confirmation should have a booking number - should be able to print from both side meaning patient/receptionist
+"Booking can be cancelled 
+By the patient at any point of time
+By the receptionist - receptionist in case if the patient not turned up to the hospital and make that schedule available to other patient at the same time if the other patient is available at the hospital, receptionist can able to cancel and rebook for other patient only in 5 mins"
+After consultation is over with General/Specialist - Fees collection will be done by the receptionist and screen should have and allow to print and give the same to patient
+"Patient prescription should be printable by receptionist and give it to patients
+General doctor recommendations to specialist - Rules"
+general doctor 1 recommends 4, 8, 12 patients to see specialist in the order meaning 1st specialist, 2nd specialist and 3rd specialist
+general doctor 2 recommends 5, 10 patients to see specialist in the order meaning 4th specialist and 3rd specialist
+general doctor 2 recommends 2, 8 patients to see specialist in the order meaning 2nd specialist and 4th specialist
+general doctor 4 recommends 3,6,9,11 patients to see specialist in the order meaning 1st, 3rd, 2nd and 4th specialist
+
+Reports
+At any point of time allow the receptionist user to take the report of date-wise/doctor-availability/bookings/Consulted patients/collected fees day wise/doctor-wise
+Doctor prescriptions and fees need to be maintained day wise
+Patient registrations - number of them registered - at any point of time
+Patients not turned up on day-wise report
+
+Technical Design/Architecture need to be derived for the following - Before start of the 
+Development
+
+Database Schema/Table Design
+Presentation Layer - meaning UI Screens - for all the requirements stated above - none should be modified in the backend
+Business/service Layer - based on the requirements create the functionality and have them in the middle layer
+Database Layer - to access the DB data
+
+Validations
+
+All front end validations need to be done
+All business validations need to be properly reflected to the users with proper messages to change the data if needed
+All database validations need to be properly reflected to the users with proper messages to change the data if needed
+
+Logs
+
+To be maintained like which user using which functionality
+App logs for each layer need to be differentiated
+
+
+
+Exclusions or Implicit Assumptions
+
+Payment gateway or payments are assumed that all goes well without invoking
+
+Implicit - Testing
+
+For all the development implicit usage of Unit testing code should be done
+
+Devops - Tools should be used
+
+Github, Maven, Jenkins must be used to build and deploy
+
+Notifications (optional)
+
+Sent through Emails and SMS
+
+
+
